@@ -152,7 +152,7 @@ body {
     text-shadow: 0 0 20px rgb(255, 215, 0);
 }
 .header {
-    width: 600px;
+    width: 100%;
     height: 100px;
     color: white;
     border-radius: 7px;
@@ -189,8 +189,8 @@ body {
 .header .card {
     color: rgb(0, 0, 0);
     background-color: rgb(255, 215, 0);
-    opacity: 50%;
-    filter: blur(10px);
+    /* opacity: 50%;
+    filter: blur(10px); */
     border-radius: 7px;
     margin: 7px auto;
     padding: 6px;
@@ -227,12 +227,11 @@ body {
 .header .card-body {
     color: white;
     text-align: center;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: bolder;
     width: 100%;
     border-radius: 7px;
     box-shadow: 0 0 10px rgb(255, 215, 0);
-    filter: drop-shadow(0 0 10px rgb(255, 215, 0));
     box-sizing: content-box;
     margin: 2px;
     padding: 2px;
@@ -261,7 +260,7 @@ body {
     box-shadow: 0 0 10px rgb(255, 215, 0);
     filter: drop-shadow(0 0 10px rgb(255, 215, 0));
     box-sizing: content-box;
-    margin: 10px;
+    margin: 2px;
     padding: 2px;
     image-rendering: pixelated;
 }
@@ -273,7 +272,59 @@ body {
 
 /* Media Query for Mobile */
 @media screen and (max-width: 768px) {
-    /* Show button on mobile */
+    body {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        padding: 0; /* Remove padding */
+    }
+    .header {
+        width: 100%;
+        padding: 10px; /* Add padding */
+    }
+    .logo {
+        width: 50px; /* Adjust logo size for smaller screens */
+        height: 50px;
+        margin-top: 10px; /* Adjust margin */
+        margin-bottom: 10px; /* Adjust margin */
+    }
+    .nav {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+    .nav .ul li {
+        display: block; /* Change list items to stack vertically */
+        margin-bottom: 10px; /* Add margin between list items */
+    }
+    img {
+        width: 100%;;
+    }
+    .links {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        padding: 10px; /* Add padding */
+    }
+    .links a {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+    .footer {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        padding: 15px; /* Add padding */
+    }
+    .sociel-media a {
+        font-size: 24px; /* Adjust font size for smaller screens */
+        padding: 8px; /* Adjust padding */
+    }
+    .box, .titles, .itmes-li, .header .card-body {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        padding: 8px; /* Add padding */
+        margin: 5px; /* Add margin */
+    }
+    .header .card {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        padding: 8px; /* Add padding */
+        margin: 5px; /* Add margin */
+    }
+    #about-left img, #about-right img {
+        width: 100%; /* Make images fill container */
+        margin: 10px auto; /* Center images and add space below */
+    }
     .mobile-btn {
         display: block;
         top: 10px;
@@ -293,10 +344,8 @@ body {
     .ul.show {
         display: block;
     }
-   .card {
-    width: 100%;
-   }
 }
+
 .text-footer{
     margin: 10px auto;
     padding: 10px;
@@ -376,6 +425,10 @@ body {
 #me {
     margin: 25px;
 }
+
+#SKILLS {
+    width: 100%;
+}
 .skills {
     color: white;
     background-color: rgb(27, 27, 27);
@@ -383,7 +436,6 @@ body {
     text-align: center;
     font-size: 30px;
     font-weight: bolder;
-    width: 100%;
     border-radius: 7px;
     padding: 10px 5px;
     display: flex;
@@ -395,6 +447,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
 }
 
 
@@ -406,18 +459,18 @@ body {
 #about-left .card-content {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 #about-left img {
-    max-width: 50%;
     height: auto;
     margin-right: 20px; /* Adjust spacing between image and text */
     border: 3px solid rgb(255, 255, 255);
     border-radius: 7px;
     background-color: bisque;
-    box-shadow: 0 0 10px rgb(255, 215, 0);
     filter: drop-shadow(0 0 10px rgb(255, 215, 0));
     box-sizing: content-box;
+    width: 20%;
 }
 
 #about-left .card-title h1 {
@@ -428,6 +481,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
 }
 
 #about-right {
@@ -443,18 +497,15 @@ body {
     font-size: 16px;
     font-weight: bolder;
     width: 100%;
-    margin-bottom: 10px;
 }
 #about-right .card img {
-    max-width: 100%;
     height: auto;
     margin-left: 20px; /* Adjust spacing between image and text */
     border: 3px solid rgb(255, 255, 255);
     border-radius: 7px;
     background-color: bisque;
-    box-shadow: 0 0 10px rgb(255, 215, 0);
-    filter: drop-shadow(0 0 10px rgb(255, 215, 0));
     box-sizing: content-box;
+    width: 20%;
 }
 
 #about-right .card-title h1 {
@@ -463,31 +514,21 @@ body {
 
 @keyframes moveText {
     0% { left: 0; }
-    50% { left: 50px; }
+    50% { left: 10px; }
     100% { left: 0; }
 }
 
 .links {
-    font-size: 28px;
     border: 3px solid rgb(255, 255, 255);
     background-color: #313a91;
-    padding: 10px;
-    margin: 10px;
     border-radius: 7px;
-    display: inline;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     width: 100%;
 }
 .links a {
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bolder;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 7px;
 }
 .links:hover {
     background-color: rgb(255, 215, 0);
