@@ -420,6 +420,10 @@ body {
     position: relative;
     animation: moveText 6s infinite;
 }
+.card-title .WordPress {
+    position: relative;
+    animation: moveText 7s infinite;
+}
 #me {
     margin: 25px;
 }
@@ -512,7 +516,7 @@ body {
 
 @keyframes moveText {
     0% { left: 0; }
-    50% { left: 10px; }
+    50% { left: 20px; }
     100% { left: 0; }
 }
 
